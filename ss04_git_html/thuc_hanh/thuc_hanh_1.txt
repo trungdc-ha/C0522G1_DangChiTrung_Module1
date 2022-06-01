@@ -1,1 +1,2 @@
 Noi DUng thuc hanh 1
+Fix comment theo yeu cau tutor
