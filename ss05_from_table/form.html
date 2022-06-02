@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://abclalala.com" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="txtName" style="color: red">Student Name:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="name" id="txtName" name="q" value="Hung">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Age:</label></td>
+                <td><input type="number" placeholder="age" name="studentAge"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <!--Chọn 1 trong danh sách cố định-->
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">LGBT
+                </td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>
+                    <select>
+                        <option>Ha Noi</option>
+                        <option>Hai Phong</option>
+                        <option>Da Nang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages:</td>
+                <td>
+                    <input type="checkbox"> Java
+                    <input type="checkbox"> PHP
+                    <input type="checkbox"> C#
+                </td>
+            </tr>
+            <tr>
+                <td>Content:</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Create">
+                </td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+</body>
+</html>
