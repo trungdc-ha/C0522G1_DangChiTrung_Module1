@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Input a: </td>
+            <td>
+                <input type="number" id="numberA">
+            </td>
+        </tr>
+        <tr>
+            <td>Input b: </td>
+            <td>
+                <input type="number" id="numberB">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="add()">Sum</button>
+            </td>
+            <td>
+                <span id="result"></span>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function add() {
+            let a = document.getElementById("numberA").value;
+            console.log(a);
+            let b = document.getElementById("numberB").value;
+            console.log(b);
+            let sum = parseInt(a) + parseInt(b);
+            document.getElementById("result").innerText = sum;
+        }
+    </script>
+</body>
+</html>
