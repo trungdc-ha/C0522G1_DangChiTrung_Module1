@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    * Phân loại hv
+    * nếu tb >= 9 thông báo xuất sắc
+    * 7 <= tb < 9 thông báo tốt
+    * 6 <= tb < 7 thông báo trung binh
+    * tb < 6 yeu
+    * */
+
+    let average = prompt("Input average: ");
+
+    if (average >= 9) {
+        document.write("Excellent.");
+    } else if (average >= 7) {
+        document.write("Good.");
+    } else if (average >= 6 ) {
+        document.write("Average.");
+    } else {
+        document.write("Blow");
+    }
+
+</script>
+</body>
+</html>

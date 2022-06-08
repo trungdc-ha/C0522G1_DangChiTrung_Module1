@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * Cho người dùng nhập 1 số
+        * nếu số là 2 ==> thứ 2
+        * nếu số là 3 ==> thứ 3
+        * nếu số là 4 ==> thứ 4
+        * nếu số là 5 ==> thứ 5
+        * nếu số là 6 ==> thứ 6
+        * nếu số là 7 ==> thứ 7
+        * nếu số là 8 ==> Chu Nhat
+        * Ngoài những số trên, thì thông báo lỗi
+        *
+        * */
+        let input = parseInt(prompt("Nhập vào một số"));
+        switch (input) { //so sánh ===
+            case 2 : document.write("Thứ Hai");break;
+            case 3 : document.write("Thứ Ba"); break;
+            case 4 : document.write("Thứ Tư"); break;
+            case 5 : document.write("Thứ Năm"); break;
+            case 6 : document.write("Thứ Sáu"); break;
+            case 7 : document.write("Thứ Bảy"); break;
+            case 8 : document.write("Chủ Nhật"); break;
+            default: document.write("Số nhập không hợp lệ.");
+
+        }
+    </script>
+</body>
+</html>

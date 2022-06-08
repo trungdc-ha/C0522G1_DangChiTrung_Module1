@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * Nếu điểm thi >= 75
+        *  - Nếu tỉ lệ vắng nghỉ < 10 thì thông báo Pass
+        *  - Nếu tỉ lệ vắng nghỉ >=10 thì đi nói chuyện với coach
+        * Nếu điểm thì <75 thì Fail
+
+        * */
+
+        let point = prompt("Input point: ");
+        let absent = prompt("Input absent: ");
+
+        if(point >= 75){
+            if(absent < 10){
+                alert("Pass");
+            } else {
+                alert("Consider with coach...");
+            }
+        } else {
+            alert("Fail");
+        }
+    </script>
+</body>
+</html>
