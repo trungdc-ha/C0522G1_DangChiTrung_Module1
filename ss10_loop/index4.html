@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // do {
+        //     document.write("a");
+        // }while (5 == 8)
+        let count = 1;
+        while (true){ //vòng lặp vô hạn, vô tận
+            document.write("ăn cơm ngày : " + count + "<br>");
+            count++;
+            let input = confirm("Bạn có muốn ăn nữa không ?")
+            if(input == false){
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * Bôn đc mẹ cho 10d
+        * Yêu cầu Bôn đi siêu thị mua hàng hóa
+        * ==> Mô phỏng lại quá trình đi mua hàng của Bôn
+        * Điều kiện: chỉ mua được hàng khi Bôn còn tiền.
+        * */
+        /*
+        * - Nội dung cần lặp là gì ?
+        * - Điều kiện lặp là gì ?
+        * - Số lần lặp là bao nhiều ?
+        *    - Lặp ít nhất bao nhiêu lần ?
+        * */
+
+        let money = 10;
+        while (money >0){ //điều kiện lặp
+            //nôi dung lặp
+            let product = prompt("Bôn muốn mua gì ?");
+            let price = parseInt(prompt("Nhập giá sản phẩm: "));
+            if(price <= money){
+                money = money - price;
+                document.write("Bôn đã mua thành công: " + product + " với giá : " + price + "<br>")
+            }
+        }
+    </script>
+</body>
+</html>
