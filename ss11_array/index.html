@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str = "C05";
+        let number = 9.6;
+        let isExist = true;
+        // ==> mỗi biến chỉ lưu 1 giá trị
+
+        // 1 biến có thể lưu dc nhiều giá trị ?
+        let arr = ["C05", 9.6, true]; //cách 1
+        // document.writeln(arr.length);
+        // document.writeln(arr[9]);
+
+        let arr1 = new Array("C05", 9.6, true); //cach 2
+        let arr2 =  Array("C05", 9.6, true); //cach 3
+
+        /*
+        * Khai báo mảng số nguyên có các giá trị lần lượt là
+        * 15,8,16
+        * */
+        // let arrNumber = new Array(15,8,16);
+        let arrNumber = Array(15); //số lượng
+        document.writeln(arrNumber.length); //15
+        document.writeln(arrNumber[arrNumber.length - 1]); //U
+
+
+    </script>
+</body>
+</html>
