@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,3];
+        let b = [4,5,6,9];
+        //b1 khai báo mảng c có kích thước = a + b
+        let c = new Array(a.length + b.length);
+
+        //b2 copy giá trị từ a sang c
+        for(let i = 0; i < a.length; i++){
+            c[i] = a[i];
+        }
+
+        //b3 copy giá trị từ b sang c
+        for(let j = 0; j < b.length; j++){
+            c[a.length + j] = b[j];
+            //c[3] = b[0]
+            //c[4] = b[1]
+            //c[5] = b[2]
+            //c[6] = b[3]
+        }
+        document.write(c);
+
+        //cach 2
+        let c = a.concat(b); //hàm nối mảng
+        document.write(c);
+
+    </script>
+</body>
+</html>

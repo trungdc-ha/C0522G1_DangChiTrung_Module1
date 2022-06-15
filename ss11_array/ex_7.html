@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7];
+
+    /*Nhập V*/
+    let v = parseInt(prompt("Input V: "));
+
+    // /*Tìm V có trong mảng không */
+    // let index = -1;
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (v == arr[i]) {
+    //         index = i;
+    //     }
+    // }
+    // // document.write(index);
+    //
+    //
+    // if (index != -1) {
+    //     /*Xóa nếu v tồn tại*/
+    //     for (let i = index; i < arr.length - 1; i++) {
+    //         arr[i] = arr[i + 1];
+    //     }
+    //     //gán 0 cho phần tử cuối
+    //     arr[arr.length - 1] = 0;
+    //     document.write(arr)
+    // } else {
+    //     /*Ko có V trong mảng*/
+    //     alert("Not found: " + v);
+    // }
+
+    /*Cach 2*/
+    let index = arr.indexOf(v); //tìm kiếm
+    arr.splice(index,1); //xóa
+    arr.push(0); //thêm cuối
+    document.write(arr);
+
+</script>
+</body>
+</html>
