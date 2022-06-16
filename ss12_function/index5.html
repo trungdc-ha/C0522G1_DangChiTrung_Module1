@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let x = 10; //biến toàn cục
+        function increase() {
+            var y = 10; //biến cục bộ
+            y++;
+            x++;
+            document.writeln("x trong hàm: " + x + "<br>");
+        }
+        increase();
+        document.write(x); //11
+        document.write(y); //error
+    </script>
+</body>
+</html>

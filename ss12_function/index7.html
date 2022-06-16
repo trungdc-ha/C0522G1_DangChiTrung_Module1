@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function changeValue(a){
+            let temp = new Array(a.length);
+            for(let i = 0; i<a.length; i++){
+                temp[i] = a[i];
+            }
+            temp[0] = 11;
+        }
+
+        let arr = [1,2];
+        changeValue(arr);
+        document.writeln(arr);
+    </script>
+</body>
+</html>

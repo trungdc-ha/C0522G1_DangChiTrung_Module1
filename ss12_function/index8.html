@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="result"></p>
+    <input id="myTxt" type="text" onchange="getValue()">
+
+    <!--onchange nên dùng select option-->
+    <script>
+        function getValue() {
+            let value = document.getElementById("myTxt").value;
+            document.getElementById("result").innerText = value;
+        }
+    </script>
+</body>
+</html>

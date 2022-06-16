@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = 10; //biến toàn cục
+    function increase(x) {// tham số là biến cục bộ
+        x++;
+        document.writeln("x trong hàm: " + x + "<br>");//6
+    }
+
+    increase(5);
+    document.write(x); //10
+</script>
+</body>
+</html>
