@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = 6;
+
+        function swap(x, y) {
+            let temp = x;
+            x = y;
+            y = temp;
+            console.log("x = " + x); //6
+            console.log("y = " + y); //5
+        }
+
+        swap(a, b); //truyền tham trị - copy giá trị truyền vào hàm
+        document.write(a + "<br>"); //5
+        document.write(b + "<br>"); //6
+    </script>
+</body>
+</html>
