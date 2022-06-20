@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class DienThoai {
+        constructor(ten, hangSX) {
+            this.ten = ten;
+            this.hangSX = hangSX;
+        }
+
+        // constructor(ten) {
+        //     this.ten = ten;
+        // }
+
+        goiDien(){
+            document.write(this.ten + " dang goi dien" + "<br>")
+        }
+
+        //setter - cập nhật giá trị cho thuộc tính
+        setTen(tenMoi){
+            this.ten = tenMoi;
+        }
+
+        //getter - trả về giá trị thuộc tính
+        getTen() {
+            return this.ten;
+        }
+    }
+
+    /*B2 Tạo đối tượng*/
+    let iphone12 = new DienThoai("Iphone 12", "Apple");
+    // iphone12.ten = "Iphone 15"; //truy cập trực tiếp thông qua tên đối tượng
+    iphone12.setTen("Iphone 19"); //truy cập gián tiếp
+
+    // document.write(iphone12.hangSX);
+    document.write(iphone12.getTen() + "<br>");
+    iphone12.goiDien();
+
+    // typeof iphone12; //Object
+    //
+    // let samsungS10 = new DienThoai("SamSung S10", "Samsung");
+    // samsungS10.goiDien();
+
+</script>
+</body>
+</html>
