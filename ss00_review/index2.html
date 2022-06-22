@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class ElectricLamp {
+            constructor() {
+                this.status = false;
+            }
+
+            turnOn() {
+                this.status = true;
+            }
+
+            turnOff() {
+                this.status = false;
+            }
+
+            getStatus(){
+                return this.status;
+            }
+        }
+
+        class SwitchButton {
+            constructor(status) {
+                this.status = status;
+            }
+
+            connectToLamp(newLamp){ //tham chiếu
+                this.lamp = newLamp;
+            }
+
+            switchOn() {
+                this.status = true;
+                if(this.lamp != null){ //kiểm tra đã nối bòng đèn có chưa ?
+                    this.lamp.turnOn();
+                } else {
+                    document.write("Lắp bóng đèn vào bạn " + "<br>")
+                }
+            }
+
+            switchOff() {
+                this.status = false;
+                if(this.lamp != null){
+                    this.lamp.turnOff();
+                } else {
+                    document.write("Lắp bóng đèn vào bạn " + "<br>")
+                }
+            }
+        }
+
+        let dienQuang = new ElectricLamp();
+        let rangDong = new SwitchButton(false);
+        rangDong.connectToLamp(dienQuang);
+        for(let count  = 1; count <= 10; count++){
+            rangDong.switchOn();
+            if(dienQuang.getStatus()){
+                document.write("Den dang SÁNG. " + count + "<br>")
+            }
+
+            rangDong.switchOff();
+
+            if(!dienQuang.getStatus()){
+                document.write("Den dang TẮT. " + count + "<br>")
+            }
+        }
+
+    </script>
+</body>
+</html>
